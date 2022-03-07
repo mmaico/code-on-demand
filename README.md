@@ -1,5 +1,5 @@
 ## Code on demand
- Simple implementation of Code On Demand based on the dissertation on Rest by Roy Fielding.
+ Simple implementation of Code On Demand based on the [dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) on Rest by Roy Fielding.
  
  I'll build a Java application that will receive a JavaScript and will execute this one using Nashorn.
 
