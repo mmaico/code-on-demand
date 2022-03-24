@@ -355,7 +355,7 @@
     /* eslint-enable max-len -- Can make multiline type after https://github.com/syavorsky/comment-parser/issues/109 */
 
     /**
-     * @param {string|JSONPathOptions} opts If a string, will be treated as `expr`
+     * @param {{path: string; json: string; resultType: string}} opts If a string, will be treated as `expr`
      * @param {string} [expr] JSON path to evaluate
      * @param {JSON} [obj] JSON object to evaluate against
      * @param {JSONPathCallback} [callback] Passed 3 arguments: 1) desired payload
