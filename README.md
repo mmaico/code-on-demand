@@ -4,6 +4,17 @@
  I'll build a Java application that will receive a JavaScript and will execute this one using Nashorn.
 
  In node directory have a node application(TypeScript, Webpack, ES5) 
+
+
+
+ #### Dev mode
+  Into the node folder execute npm run watch:build, the file built will transpile inside the folder 
+  src/main/resources/js-node/code-on-demand.js. Execute node /src/main/resource/js-node/code-on-demand.js
+
+
+  
+  
+  
  
  
  
