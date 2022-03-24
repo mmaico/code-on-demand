@@ -2,11 +2,12 @@ import {MaskHolder} from "./mask.holder";
 
 export enum Type { GENERIC, EMAIL }
 
-export interface Processor {
+export interface Formatter {
     apply(data: string, mask: string): string
 }
 
-export class GenericProcessor implements Processor {
+
+export class GenericFormatter implements Formatter {
     apply(data: string, mask: string): string {
         let treatedData = data.replace(/\*/g, "0").trim()
         let masked = []
@@ -27,7 +28,7 @@ export class GenericProcessor implements Processor {
 
 }
 
-export class EmailProcessor implements Processor {
+export class EmailFormatter implements Formatter {
 
     apply(email: string, mask: string): string {
         let masked = []
