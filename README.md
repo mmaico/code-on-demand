@@ -9,7 +9,8 @@
 
  #### Dev mode
   Into the node folder execute npm run watch:build, the file built will transpile inside the folder 
-  src/main/resources/js-node/code-on-demand.js. Execute node /src/main/resource/js-node/code-on-demand.js
+  src/main/resources/js-node/json-mask.js. Execute node /src/main/resource/js-node/json-mask.js or execute 
+  the main class using Java Nashorn
 
 
   
