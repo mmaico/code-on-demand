@@ -1,6 +1,6 @@
-import jsonpath = require('../jsonpath');
-import {EmailFormatter, Formatter, GenericFormatter, Type} from "./mask.formatter";
-import {MaskDefault} from "./mask.default";
+import jsonpath = require('../../jsonpath');
+import {MaskDefault} from "../mask.default";
+import {EmailFormatter, Formatter, GenericFormatter, Type} from "../formatter/mask.formatter";
 
 export class MaskProcessor {
 
