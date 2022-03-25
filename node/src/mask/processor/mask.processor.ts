@@ -1,4 +1,4 @@
-import jsonpath = require('../../jsonpath');
+import jsonpath = require('../../../lib/jsonpath');
 import {MaskDefault} from "../mask.default";
 import {EmailFormatter, Formatter, GenericFormatter, Type} from "../formatter/mask.formatter";
 

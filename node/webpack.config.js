@@ -6,7 +6,7 @@ module.exports = {
     devtool: 'inline-source-map',
     output: {
         path: path.resolve("../src/main/resources", 'js-code'),
-        filename: 'code-on-demand.js'
+        filename: 'json-mask.js'
     },
     resolve: {
         extensions: ['.ts', '.js'] //resolve all the modules other than index.ts
