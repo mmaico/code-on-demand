@@ -1,6 +1,6 @@
 import {MaskHolder} from "./mask.holder";
 
-export enum Type { GENERIC, EMAIL }
+export enum Type { CPF, CNPJ, MOBILE, EMAIL}
 
 export interface Formatter {
     apply(data: string, mask: string): string
