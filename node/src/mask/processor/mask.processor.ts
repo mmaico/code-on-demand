@@ -1,3 +1,4 @@
+
 import jsonpath = require('../../../lib/jsonpath');
 import {MaskDefault} from "../mask.default";
 import {EmailFormatter, Formatter, GenericFormatter, Type} from "../formatter/mask.formatter";
@@ -12,6 +13,7 @@ export class MaskProcessor {
     ])
 
     process(json: any, settings: Setting[]): string {
+
         settings.forEach(setting => {
             let result = (jsonpath.JSONPath({json, path: setting.path, resultType: 'all'})) as Array<any>
 

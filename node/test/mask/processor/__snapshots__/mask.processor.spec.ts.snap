@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mask processor should apply mask on cpf and phone 1`] = `"{\\"store\\":{\\"sellers\\":[{\\"name\\":\\"Jaime Lannister\\",\\"cpf\\":\\"921.***.***-**\\",\\"mobile\\":\\"11987569852\\",\\"email\\":\\"jlannister@got.com\\"},{\\"name\\":\\"Sansa Stark\\",\\"cpf\\":\\"107.***.***-**\\",\\"mobile\\":\\"11932547896\\",\\"email\\":\\"sstark@got.com\\"}]}}"`;
