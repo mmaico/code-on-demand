@@ -2,4 +2,4 @@
 
 exports[`Mask processor should apply mask on cnpj and email 1`] = `"{\\"store\\":{\\"sellers\\":[{\\"name\\":\\"Lannisters s/a\\",\\"cnpj\\":\\"**.***.***/****-10\\",\\"mobile\\":\\"118857454\\",\\"email\\":\\"su*****@l*********.com\\"},{\\"name\\":\\"Starks s/a\\",\\"cnpj\\":\\"**.***.***/****-55\\",\\"mobile\\":\\"118849948\\",\\"email\\":\\"su*****@s*****.com\\"}]}}"`;
 
-exports[`Mask processor should apply mask on cpf and mobile 1`] = `"{\\"store\\":{\\"sellers\\":[{\\"name\\":\\"Jaime Lannister\\",\\"cpf\\":\\"921.***.***-90\\",\\"mobile\\":\\"(11)*****-9852\\",\\"email\\":\\"jlannister@got.com\\"},{\\"name\\":\\"Sansa Stark\\",\\"cpf\\":\\"107.***.***-17\\",\\"mobile\\":\\"(11)*****-7896\\",\\"email\\":\\"sstark@got.com\\"}]}}"`;
+exports[`Mask processor should apply mask on cpf and mobile 1`] = `"{\\"store\\":{\\"sellers\\":[{\\"name\\":\\"Jaime Lannister\\",\\"cpf\\":\\"921.***.***-**\\",\\"mobile\\":\\"(11)*****-9852\\",\\"email\\":\\"jlannister@got.com\\"},{\\"name\\":\\"Sansa Stark\\",\\"cpf\\":\\"107.***.***-**\\",\\"mobile\\":\\"(11)*****-7896\\",\\"email\\":\\"sstark@got.com\\"}]}}"`;

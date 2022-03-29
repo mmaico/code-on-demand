@@ -14,7 +14,7 @@ export class MaskProcessor {
 
     process(json: any, settings: Setting[]): string {
         settings.forEach(setting => {
-            let result = (jsonpath.JSONPath({json, path: setting.path, resultType: 'all'})) as Array<any>
+            let result = (new jsonpath.JSONPath({json, path: setting.path, resultType: 'all'})) as unknown as Array<any>
 
             result.forEach(field => {
                 let type: Type = Type[setting.type]
