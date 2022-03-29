@@ -2,9 +2,9 @@ package mmaico.codeondemand.sellers.view.support;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import mmaico.codeondemand.infrastructure.serializers.CPFSerializer;
-import mmaico.codeondemand.infrastructure.serializers.EmailSerializer;
-import mmaico.codeondemand.infrastructure.serializers.MobileSerializer;
+import mmaico.codeondemand.infrastructure.serializers.CPFMaskSerializer;
+import mmaico.codeondemand.infrastructure.serializers.EmailMaskSerializer;
+import mmaico.codeondemand.infrastructure.serializers.MobileMaskSerializer;
 import org.springframework.hateoas.RepresentationModel;
 import org.springframework.hateoas.server.core.Relation;
 
@@ -16,11 +16,11 @@ public class SellerResource extends RepresentationModel<SellerResource> {
     private String name;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
     private Date enrollment;
-    @JsonSerialize(using = MobileSerializer.class)
+    @JsonSerialize(using = MobileMaskSerializer.class)
     private String mobile;
-    @JsonSerialize(using = EmailSerializer.class)
+    @JsonSerialize(using = EmailMaskSerializer.class)
     private String email;
-    @JsonSerialize(using = CPFSerializer.class)
+    @JsonSerialize(using = CPFMaskSerializer.class)
     private String cpf;
 
     public SellerResource() {
