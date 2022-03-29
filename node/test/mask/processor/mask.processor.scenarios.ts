@@ -2,7 +2,7 @@ import Scenario from "../../infratest/scenario.infra";
 
 export const maskProcessorScenarios: Scenario[] = [
     {
-        description: 'sellers with cpf and email data',
+        description: 'sellers with cpf and mobile data',
         json: {
             store: {
                 sellers: [
@@ -24,7 +24,32 @@ export const maskProcessorScenarios: Scenario[] = [
     },
     {
         description: 'settings(jsonpath) to mask the cpf and mobile',
-        json: [{type: "MOBILE", path: "$.store.sellers[*].phone"}, {type: "CPF", path: "$.store.sellers[*].cpf"}]
-    }
+        json: [{type: "MOBILE", path: "$.store.sellers[*].mobile"}, {type: "CPF", path: "$.store.sellers[*].cpf"}]
+    },
+    {
+        description: 'sellers with cnpj and email data',
+        json: {
+            store: {
+                sellers: [
+                    {
+                        name: "Lannisters s/a",
+                        cnpj: "10910585000110",
+                        mobile: "118857454",
+                        email: "support@lennisters.com"
+                    },
+                    {
+                        name: "Starks s/a",
+                        cnpj: "85463285000155",
+                        mobile: "118849948",
+                        email: "support@starks.com"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        description: 'settings(jsonpath) to mask the cnpj and email',
+        json: [{type: "CNPJ", path: "$.store.sellers[*].cnpj"}, {type: "EMAIL", path: "$.store.sellers[*].email"}]
+    },
 
 ]
