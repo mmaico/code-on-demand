@@ -4,15 +4,17 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import mmaico.codeondemand.infrastructure.JavaScriptEngine;
-import mmaico.codeondemand.infrastructure.ServiceLocator;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
 
-public class CPFSerializer extends JsonSerializer<String> {
+public class CPFMaskSerializer extends JsonSerializer<String> {
+
+    @Autowired
+    private JavaScriptEngine engine;
 
     @Override
     public void serialize(String cpf, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
-        JavaScriptEngine jsEngine = ServiceLocator.getBean(JavaScriptEngine.class);
-        jsonGenerator.writeObject(jsEngine.call(cpf, "CPF"));
+        jsonGenerator.writeObject(engine.call(cpf, "CPF"));
     }
 }
