@@ -14,15 +14,13 @@ public class Seller {
     private final String name;
     private final Date enrollment;
     private final String cpf;
-    private final String mobile;
     private final String email;
 
-    public Seller(String id, String name, Date enrollment, String cpf, String mobile, String email) {
+    public Seller(String id, String name, Date enrollment, String cpf, String email) {
         this.id = id;
         this.name = name;
         this.enrollment = enrollment;
         this.cpf = cpf;
-        this.mobile = mobile;
         this.email = email;
 
     }
@@ -49,10 +47,6 @@ public class Seller {
 
     public String getCpf() {
         return cpf;
-    }
-
-    public String getMobile() {
-        return mobile;
     }
 
     public String getEmail() {

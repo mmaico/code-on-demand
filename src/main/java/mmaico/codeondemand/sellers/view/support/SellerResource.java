@@ -16,8 +16,6 @@ public class SellerResource extends RepresentationModel<SellerResource> {
     private String name;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
     private Date enrollment;
-    @JsonSerialize(using = MobileMaskSerializer.class)
-    private String mobile;
     @JsonSerialize(using = EmailMaskSerializer.class)
     private String email;
     @JsonSerialize(using = CPFMaskSerializer.class)
@@ -26,13 +24,12 @@ public class SellerResource extends RepresentationModel<SellerResource> {
     public SellerResource() {
     }
 
-    public SellerResource(String id, String name, Date enrollment, String mobile, String email, String cpf) {
+    public SellerResource(String id, String name, Date enrollment, String email, String cpf) {
         this();
         this.id = id;
         this.name = name;
         this.enrollment = enrollment;
         this.cpf = cpf;
-        this.mobile = mobile;
         this.email = email;
     }
 
@@ -58,10 +55,6 @@ public class SellerResource extends RepresentationModel<SellerResource> {
 
     public void setEnrollment(Date enrollment) {
         this.enrollment = enrollment;
-    }
-
-    public String getMobile() {
-        return mobile;
     }
 
     public String getEmail() {
