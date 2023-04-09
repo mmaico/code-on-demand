@@ -14,15 +14,6 @@ module.exports = {
         extensions: ['.ts', '.js'] //resolve all the modules other than index.ts
     },
     module: {
-        loaders: [
-            {
-                test: /\.js$/,
-                loader: 'babel-loader',
-                query: {
-                    presets: ['es2015']
-                }
-            }
-        ],
         rules: [
             {
                 use: 'ts-loader',

@@ -11,6 +11,7 @@ import org.springframework.hateoas.server.core.Relation;
 import java.util.Date;
 
 @Relation(collectionRelation = "sellers")
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class SellerResource extends RepresentationModel<SellerResource> {
     private String id;
     private String name;

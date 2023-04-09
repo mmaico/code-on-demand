@@ -9,4 +9,10 @@ export default function mask(json: string, settings: string): string {
     return JSON.parse(result).value;
 }
 
+export function maskObj(json: any, settings: any): string {
+    let result = new MaskProcessor().process(JSON.parse(json), JSON.parse(settings))
+    return JSON.parse(result).value;
+}
+
+
 

@@ -15,6 +15,7 @@ public class EmailMaskSerializer extends JsonSerializer<String> {
 
     @Override
     public void serialize(String email, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException {
+        String email1 = engine.call(email, "EMAIL");
         jsonGenerator.writeObject(engine.call(email, "EMAIL"));
     }
 }
