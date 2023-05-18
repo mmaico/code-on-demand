@@ -40,7 +40,6 @@ public class JavaScriptEngine {
          */
         String absolutePath = new File("src/main/resources/js-code/json-mask.js").getAbsolutePath();
         Object eval = engine.eval(Files.newBufferedReader(Paths.get(absolutePath), StandardCharsets.UTF_8));
-        //engine.eval("load('http://localhost:3000/json-mask.js')");
 
         this.engine = engine;
     }
